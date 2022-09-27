@@ -1,0 +1,133 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "publisherName": "zevcore.com",
+  "productName": "Zevcore-WAS",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "description": "Zevcore Pvt Ltd WAS system",
+  "author": {
+    "name": "Zevcore Private Limited",
+    "email": "support@zevcore.com"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "@emotion/react": "^11.10.0",
+    "@mantine/carousel": "^5.1.6",
+    "@mantine/core": "^5.1.6",
+    "@mantine/dates": "^5.1.6",
+    "@mantine/dropzone": "^5.1.6",
+    "@mantine/form": "^5.1.6",
+    "@mantine/hooks": "^5.1.6",
+    "@mantine/modals": "^5.1.6",
+    "@mantine/notifications": "^5.1.6",
+    "@mantine/nprogress": "^5.1.6",
+    "@mantine/prism": "^5.1.6",
+    "@mantine/rte": "^5.1.6",
+    "@mantine/spotlight": "^5.1.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.5",
+    "electron-is-dev": "^2.0.0",
+    "electron-updater": "^5.2.1",
+    "embla-carousel-react": "^7.0.0",
+    "file-saver": "^2.0.5",
+    "firebase": "^9.9.3",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25",
+    "jszip": "^3.10.1",
+    "jszip-utils": "^0.1.0",
+    "nodemailer": "^6.7.8",
+    "number-to-words": "^1.2.4",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-barcode": "^1.4.4",
+    "react-csv": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-image-crop": "^9.1.1",
+    "react-lottie": "^1.2.3",
+    "react-phone-number-input": "^3.2.11",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "read-excel-file": "^5.4.5",
+    "sequelize": "^6.21.4",
+    "sqlite3": "^5.0.11",
+    "tabler-icons-react": "^1.54.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "lint": "eslint .",
+    "rebuild-sqlite3": "electron-builder --win -c.extraMetadata.main=build/electron.js --publish never"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "electron": "^20.0.3",
+    "electron-builder": "^23.3.3",
+    "wait-on": "^6.0.1"
+  },
+  "build": {
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "src/**/*",
+      "db/**/*",
+      "src/electron-backend/**/*"
+    ],
+    "extraResources": [
+      "src/assets/db/*"
+    ],
+    "publish": {
+      "provider": "github",
+      "repo": "Accounting System",
+      "owner": "Zevcore-APOS",
+      "private": true,
+      "token": "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"
+    },
+    "win": {
+      "appId": "zevcore-was-app",
+      "target": [
+        "nsis"
+      ],
+      "icon": "./src/assets/images/icon.png"
+    },
+    "nsis": {
+      "installerIcon": "./src/assets/images/logo.ico",
+      "uninstallerIcon": "./src/assets/images/logo.ico",
+      "installerSidebar": "./src/assets/images/installerSidebar.bmp",
+      "uninstallerSidebar": "./src/assets/images/installerSidebar.bmp",
+      "uninstallDisplayName": "Zevcore-WAS",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}

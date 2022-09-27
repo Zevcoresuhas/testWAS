@@ -1,0 +1,26 @@
+const db = require("./models");
+db.sequelize.sync();
+
+require("./controller/extra.controller");
+require("./controller/auth.controller");
+require("./controller/account.controller");
+require("./controller/tax.controller");
+require("./controller/sale_type.controller");
+require("./controller/brand.controller");
+require("./controller/group.controller");
+require("./controller/subgroup.controller");
+require("./controller/product.controller");
+require("./controller/bank.controller");
+require("./controller/address.controller");
+require("./controller/vendor.controller");
+require("./controller/po.controller");
+require("./controller/stock.controller");
+require("./controller/customer.controller");
+require("./controller/invoice.controller");
+require("./controller/estimate.controller");
+require("./controller/user.controller");
+require("./controller/cash_ledger.controller");
+require("./controller/bank_ledger.controller");
+require("./controller/report.controller");
+require("./controller/reminder.controller");
+require("./controller/payment.controller");

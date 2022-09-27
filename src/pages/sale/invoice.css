@@ -1,0 +1,186 @@
+.invoiceContainer {
+    width: 850px;
+    margin: auto;
+    font-size: 10px !important;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.invoiceTable {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.tableText {
+    text-align: center;
+}
+
+.tableTextRight {
+    text-align: right;
+    align-items: right;
+}
+
+.tableTextLeft {
+    text-align: left;
+}
+
+
+
+.tableTextRight {
+    text-align: right;
+
+}
+
+.w-100 {
+    width: 1px !important;
+}
+
+.tableHeader {
+    font-weight: 600;
+
+}
+
+.tableHeader2 {
+    font-weight: 600;
+    width: 80%;
+}
+
+.tableHeader3 {
+    font-weight: 600;
+    width: 10%;
+}
+
+.tableHeader4 {
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.invoiceTable {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    border: 1px solid rgb(44, 44, 44);
+    color: #37393b;
+    margin: 10px 0 0 0;
+    text-shadow: #fff 1px -1px 1px;
+    text-align: left;
+    width: 100%;
+}
+
+.invoiceTable tbody tr td {
+    border-bottom: 1px solid rgb(44, 44, 44);
+    border-right: 1px solid rgb(44, 44, 44);
+    padding: 2px 6px;
+    font-size: 12px !important;
+
+}
+
+.tableSpan {
+    font-weight: 600;
+}
+
+.tableBottomBorderNo td {
+    border-bottom: none !important;
+}
+
+.tableTopBorder td {
+    border-top: 1px solid rgb(44, 44, 44) !important;
+}
+
+
+
+.td2 {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+
+
+.invoiceProducts {
+    /* height: 300px; */
+    vertical-align: text-top;
+}
+
+.invoiceProducts tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+
+.invoicePrint {
+    text-align: right;
+}
+
+.invoicePrint button {
+    margin-top: 15px;
+    padding: 6px 15px;
+    border: none;
+    background-color: #43A047;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.invoicePrint button:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.last {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+@media print {
+    .noprint {
+        visibility: hidden;
+    }
+}
+
+/* For small print  */
+
+.invoiceContainer2 {
+    width: 250px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.invoiceTable2 {
+    width: 100%;
+    border-collapse: collapse;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.invoiceTable3 {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    border: none !important;
+    font-size: 10px;
+}
+
+.invoiceTable3 thead th, .invoiceTable3 tbody td {
+    border: none !important;
+
+    font-size: 10px;
+}
+
+
+.invoiceTable2 tbody td {
+    border: 1px dashed rgb(44, 44, 44);
+    border-right: none !important;
+    border-left: none !important;
+    padding: 8px;
+    font-size: 10px;
+}
+
+
+.td3 {
+    border: none !important;
+}
