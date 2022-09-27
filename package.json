@@ -106,10 +106,8 @@
     ],
     "publish": {
       "provider": "github",
-      "repo": "Accounting System",
-      "owner": "Zevcore-APOS",
-      "private": true,
-      "token": "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"
+      "repo": "testWas",
+      "owner": "Zevcoresuhas"
     },
     "win": {
       "appId": "zevcore-was-app",
